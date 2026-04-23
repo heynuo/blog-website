@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+/* Markdown styles */
+.prose {
+  max-width: 65ch;
+}
+
+.prose h1 {
+  @apply text-4xl font-bold mt-8 mb-4 text-gray-900;
+}
+
+.prose h2 {
+  @apply text-3xl font-bold mt-6 mb-3 text-gray-800;
+}
+
+.prose h3 {
+  @apply text-2xl font-bold mt-4 mb-2 text-gray-700;
+}
+
+.prose p {
+  @apply text-lg leading-7 mb-4 text-gray-700;
+}
+
+.prose ul,
+.prose ol {
+  @apply mb-4 ml-6;
+}
+
+.prose li {
+  @apply mb-2 text-gray-700;
+}
+
+.prose code {
+  @apply bg-gray-100 rounded px-2 py-1 font-mono text-sm text-gray-800;
+}
+
+.prose pre {
+  @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0 text-gray-100;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-indigo-500 pl-4 italic text-gray-600 my-4;
+}
+
+.prose a {
+  @apply text-indigo-600 hover:text-indigo-800 underline;
+}
